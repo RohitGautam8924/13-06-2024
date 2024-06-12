@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        
+    :root {
+      --bgColor: rgb(0, 195, 255);
+      --bgColor: crimson;
+
+    }
+
+header{
+    max-width: 100vw;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-inline: 100px;
+    box-shadow: 0 0 10px 10px black;
+}
+header .SettingIcon a i{
+    color: var(--bgColor);
+    font-size: 25px;
+    padding-block: 10px;
+}
+
+
+.navSlideBarMenu{
+    background-color: black;
+    width: 350px;
+    min-height: calc(100vh - 45px);
+    box-shadow: 0 0 10px 10px black;
+
+
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 80px;
+    flex-direction: column;
+}
+.close_btn{
+    font-size: 25px;
+    align-self: self-end;
+    padding-right: 40px;
+    padding-top: 30px;
+}
+.close_btn i{
+    color: var(--bgColor);
+
+}
+
+.SlideBarLogo a{
+      font-size: 25px;
+      font-family: monospace;
+      position: relative;
+      cursor: pointer;
+      color: white;
+      text-shadow: 0 5px 2px red;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+.SlideBarLogo a::before {
+      content: '';
+      width: 25%;
+      height: 70%;
+      background-color: transparent;
+      position: absolute;
+      top: -15px;
+      left: -15px;
+      border-top: 3px solid var(--bgColor);
+      border-left: 3px solid var(--bgColor);
+    }
+
+    .SlideBarLogo a::after {
+      content: '';
+      width: 25%;
+      height: 70%;
+      background-color: transparent;
+      position: absolute;
+      bottom: -15px;
+      right: -15px;
+      border-bottom: 3px solid var(--bgColor);
+      border-right: 3px solid var(--bgColor);
+
+    }
+
+.SlideNav_list{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    
+}
+.SlideNav_list>a{
+    display: flex;
+    gap: 30px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-size: 20px;
+    transition: all 0.3s linear;
+}
+.SlideNav_list a:nth-child(1){
+    color: var(--bgColor);
+}
+.SlideNav_list>a:hover{
+    color: var(--bgColor);
+}
+.SecHero{
+    display: flex;
+    justify-content: space-between;
+}
+.Hero_Section{
+
+    width: calc(100vw - 350px);
+    z-index: -1;
+    background-color: rgb(5, 9, 14);
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 100px;
+    padding-inline: 100px;
+    align-items: center;
+}
+.AboutSection1{
+    flex-wrap: wrap;
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+
+}
+.AboutSection2{
+    flex-wrap: wrap;
+    position: relative;
+    margin-top: -100px;
+
+}
+
+  .AboutSection2 .imgBefore{
+     height: 100px;
+     width: 100px;
+     border-top: 5px solid var(--bgColor);
+   border-left: 5px solid var(--bgColor);
+   border-bottom: 5px solid transparent;
+   border-right: 5px solid transparent;
+   position: absolute;
+   top: -10%;
+   left: -10%;
+   /* box-shadow: 4px 3px 2px 2px green inset; */
+
+ }
+ .AboutSection2>img{
+     width: 250px;
+   height: 300px;
+   border-radius: 10px;
+   object-fit: cover;
+   box-shadow: 0px 0px 10px 2px rgb(161, 100, 112);
+   border: 5px groove white;
+ }
+ .AboutSection2 .imgAfter{
+     height: 100px;
+     width: 100px;
+   border-bottom: 5px solid var(--bgColor);
+   border-right: 5px solid var(--bgColor);
+   border-top: 5px solid transparent;
+   border-left: 5px solid transparent;
+   position: absolute;
+   right: -10%;
+   bottom: -10%;
+   /* box-shadow: -4px -3px 2px 2px green inset; */
+
+
+  }
+  .TextHighlight{
+    color: var(--bgColor);
+  }
+  .Intro{
+    color: white;
+    text-wrap: wrap;
+      font-size: 30px;
+      text-align: start;
+  }
+  .IntroPara{
+    color: white;
+    font-size: 22px;
+      letter-spacing: 3px;
+      font-family: monospace;
+      font-weight: lighter;
+  }
+
+  .Btn{
+    margin-top: 40px;
+  }
+
+  .Btn a{
+    padding-block: 10px;
+    padding-inline: 20px;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: var(--bgColor);
+      border-radius: 50px;
+      transition: all 0.4s linear;
+    
+  }
+  .Btn:hover{
+    box-shadow: 0px 0px 4px 4px green;
+  }
+  
+
+  </style>
+</head>
+<body>
+
+    <header>
+        <div class="SettingIcon">
+           <a href="#"> <i class="fa-solid fa-gear"></i></a>
+        </div>
+    </header>
+
+    
+    <div class="SecHero">
+
+        <div class="navSlideBarMenu">
+            <div class="close_btn">
+                <a href="#"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <div class="SlideBarLogo">
+                <a href="#">Atlas</a>
+            </div>
+            <div class="SlideNav_list">
+                <a href="#" id="Act"><i id="Icon_Gap" class="fa-solid fa-house"></i>Home</a>
+                <a href="#"><i id="Icon_Gap" class="fa-solid fa-bars"></i>Services</a>
+                    <a href="#"><i id="Icon_Gap" class="fa-solid fa-briefcase"></i>Portfolio</a>
+                    <a href="#"><i id="Icon_Gap" class="fa-solid fa-phone"></i>Contact</a>
+            </div>
+        </div>
+        <div class="Hero_Section">
+            <div class="AboutSection1">
+                <h1 class="Intro">Hello, My Name Is <span class="TextHighlight">Golu Don</span></h1>
+                <h1 class="Intro">I'm A <span class="TextHighlight">Web</span> |</h1>
+                <p class="IntroPara">i'm web designer with extensive experience for over 10 years.My expertise is to create and website design,and many more....</p>
+                    <div class="Btn"><a href="#">Click</a></div>                   
+            </div>
+            <div class="AboutSection2">
+    <div class="imgBefore"></div>
+    <img
+      src="https://images.unsplash.com/photo-1450133064473-71024230f91b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG1lbiUyMGluJTIwYmxhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww" alt="">
+    <div class="imgAfter"></div>
+    
+            </div>
+        </div>
+
+
+        
+    </div>
+    
+</body>
+</html>
